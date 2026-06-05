@@ -7,7 +7,13 @@
     <meta name="description" content="Prince Dev Labs Limited builds scalable technology products solving real problems across African markets. Products: CarPlaza, Propsure, LeadVerify Africa.">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; background: #0a0a0a; color: #fff; }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+        }
+
         header {
             background: #111;
             padding: 20px 40px;
@@ -19,17 +25,50 @@
             z-index: 100;
             border-bottom: 1px solid #222;
         }
-        header h1 { font-size: 22px; color: #f5a623; }
-        nav a { color: #ccc; text-decoration: none; margin-left: 20px; font-size: 14px; }
-        nav a:hover { color: #f5a623; }
+
+        header h1 {
+            font-size: 22px;
+            color: #f5a623;
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #f5a623;
+        }
+
         .hero {
             text-align: center;
             padding: 80px 20px;
             background: linear-gradient(135deg, #111, #1a1a2e);
         }
-        .hero h2 { font-size: 38px; margin-bottom: 16px; }
-        .hero p { color: #aaa; font-size: 16px; max-width: 600px; margin: 0 auto 30px; }
-        .btn { background: #f5a623; color: #000; padding: 12px 30px; border-radius: 6px; text-decoration: none; font-weight: bold; }
+
+        .hero h2 {
+            font-size: 38px;
+            margin-bottom: 16px;
+        }
+
+        .hero p {
+            color: #aaa;
+            font-size: 16px;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            background: #f5a623;
+            color: #000;
+            padding: 12px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
         .products {
             display: flex;
             gap: 24px;
@@ -38,9 +77,26 @@
             padding: 60px 20px;
             background: #0f0f0f;
         }
-        .card { background: #1a1a1a; border: 1px solid #333; border-radius: 12px; padding: 30px; width: 280px; }
-        .card h3 { color: #f5a623; margin-bottom: 10px; }
-        .card p { color: #aaa; font-size: 14px; line-height: 1.6; }
+
+        .card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 30px;
+            width: 280px;
+        }
+
+        .card h3 {
+            color: #f5a623;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #aaa;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
         .card a.card-link {
             display: inline-block;
             margin-top: 14px;
@@ -49,25 +105,50 @@
             text-decoration: none;
             font-weight: bold;
         }
-        .card a.card-link:hover { text-decoration: underline; }
-        .badge { display: inline-block; margin-top: 12px; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; }
-        .live  { background: #1a3a1a; color: #4caf50; }
-        .soon  { background: #1a1a3a; color: #5c9aff; }
 
-        /* Legal section */
+        .card a.card-link:hover {
+            text-decoration: underline;
+        }
+
+        .badge {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .live {
+            background: #1a3a1a;
+            color: #4caf50;
+        }
+
+        .soon {
+            background: #1a1a3a;
+            color: #5c9aff;
+        }
+
         .legal-links {
             text-align: center;
             padding: 40px 20px;
             background: #111;
             border-top: 1px solid #222;
         }
-        .legal-links h3 { color: #f5a623; margin-bottom: 20px; font-size: 16px; }
+
+        .legal-links h3 {
+            color: #f5a623;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
         .legal-grid {
             display: flex;
             gap: 16px;
             justify-content: center;
             flex-wrap: wrap;
         }
+
         .legal-card {
             background: #1a1a1a;
             border: 1px solid #333;
@@ -79,94 +160,141 @@
             min-width: 180px;
             transition: border-color 0.2s;
         }
-        .legal-card:hover { border-color: #f5a623; color: #f5a623; }
-        .legal-card .lc-title { font-weight: bold; color: #fff; margin-bottom: 4px; }
 
-        footer { text-align: center; padding: 30px; background: #0a0a0a; color: #555; font-size: 13px; border-top: 1px solid #1a1a1a; }
-        footer a { color: #f5a623; text-decoration: none; margin: 0 10px; }
-        footer a:hover { text-decoration: underline; }
-        .rc { color: #333; font-size: 12px; margin-top: 6px; }
+        .legal-card:hover {
+            border-color: #f5a623;
+            color: #f5a623;
+        }
+
+        .legal-card .lc-title {
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #0a0a0a;
+            color: #555;
+            font-size: 13px;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        footer a {
+            color: #f5a623;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .rc {
+            color: #333;
+            font-size: 12px;
+            margin-top: 6px;
+        }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Prince Dev Labs</h1>
-        <nav>
-            <a href="carplaza-privacy.html">Privacy Policy</a>
-            <a href="carplaza-terms.html">Terms of Use</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+<header>
+    <h1>Prince Dev Labs</h1>
+    <nav>
+        <a href="carplaza-privacy.html">Privacy Policy</a>
+        <a href="carplaza-terms.html">Terms of Use</a>
+        <a href="propsure-account-deletion.html">Delete Account</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
 
-    <div class="hero">
-        <h2>Building Africa's Digital Future</h2>
-        <p>Prince Dev Labs Limited builds scalable technology products solving real problems across African markets.</p>
-        <a href="contact.html" class="btn">Get In Touch</a>
+<div class="hero">
+    <h2>Building Africa's Digital Future</h2>
+    <p>Prince Dev Labs Limited builds scalable technology products solving real problems across African markets.</p>
+    <a href="contact.html" class="btn">Get In Touch</a>
+</div>
+
+<div class="products">
+
+    <div class="card">
+        <h3>🚗 CarPlaza</h3>
+        <p>Nigeria's trusted vehicle marketplace. Buy and sell verified cars and parts with ease. Available on Android.</p>
+        <span class="badge live">● Live on Play Store</span>
+        <br>
+        <a href="carplaza-privacy.html" class="card-link">Privacy Policy →</a>
     </div>
 
-    <div class="products">
-        <div class="card">
-            <h3>🚗 CarPlaza</h3>
-            <p>Nigeria's trusted vehicle marketplace. Buy and sell verified cars and parts with ease. Available on Android.</p>
-            <span class="badge live">● Live on Play Store</span>
-            <br>
-            <a href="carplaza-privacy.html" class="card-link">Privacy Policy →</a>
-        </div>
-
-        <div class="card">
-            <h3>🏠 Propsure</h3>
-            <p>Verified property rental marketplace for Abuja, FCT. Connect with verified landlords and agents.</p>
-            <span class="badge soon">● Launching Soon</span>
-            <br>
-            <a href="propsure-privacy.html" class="card-link">Privacy Policy →</a>
-        </div>
-
-        <div class="card">
-            <h3>✅ LeadVerify Africa</h3>
-            <p>Phone number verification and lead quality assurance for Nigerian businesses and marketplaces.</p>
-            <span class="badge soon">● Coming Soon</span>
-        </div>
+    <div class="card">
+        <h3>🏠 Propsure</h3>
+        <p>Verified property rental marketplace for Abuja, FCT. Connect with verified landlords and agents.</p>
+        <span class="badge soon">● Launching Soon</span>
+        <br>
+        <a href="propsure-privacy.html" class="card-link">Privacy Policy →</a><br>
+        <a href="propsure-account-deletion.html" class="card-link">Delete Account →</a>
     </div>
 
-    <!-- Legal docs section — required for Play Store -->
-    <div class="legal-links">
-        <h3>📄 Legal Documents</h3>
-        <div class="legal-grid">
-            <a href="carplaza-privacy.html" class="legal-card">
-                <div class="lc-title">CarPlaza</div>
-                Privacy Policy
-            </a>
-            <a href="carplaza-terms.html" class="legal-card">
-                <div class="lc-title">CarPlaza</div>
-                Terms of Use
-            </a>
-            <a href="propsure-privacy.html" class="legal-card">
-                <div class="lc-title">Propsure</div>
-                Privacy Policy
-            </a>
-            <a href="propsure-terms.html" class="legal-card">
-                <div class="lc-title">Propsure</div>
-                Terms of Use
-            </a>
-            <a href="contact.html" class="legal-card">
-                <div class="lc-title">Support</div>
-                Contact Us
-            </a>
-        </div>
+    <div class="card">
+        <h3>✅ LeadVerify Africa</h3>
+        <p>Phone number verification and lead quality assurance for Nigerian businesses and marketplaces.</p>
+        <span class="badge soon">● Coming Soon</span>
     </div>
 
-    <footer>
-        <p>© 2026 Prince Dev Labs Limited. All rights reserved. Abuja, FCT, Nigeria.</p>
-        <p style="margin-top:10px;">
-            <a href="carplaza-privacy.html">CarPlaza Privacy</a>
-            <a href="carplaza-terms.html">CarPlaza Terms</a>
-            <a href="propsure-privacy.html">Propsure Privacy</a>
-            <a href="contact.html">Contact</a>
-        </p>
-        <p style="margin-top:10px;">support@princedevlabs.com</p>
-        <p class="rc">RC: Prince Dev Labs Limited — Registered in Nigeria</p>
-    </footer>
+</div>
+
+<div class="legal-links">
+    <h3>📄 Legal Documents</h3>
+
+    <div class="legal-grid">
+
+        <a href="carplaza-privacy.html" class="legal-card">
+            <div class="lc-title">CarPlaza</div>
+            Privacy Policy
+        </a>
+
+        <a href="carplaza-terms.html" class="legal-card">
+            <div class="lc-title">CarPlaza</div>
+            Terms of Use
+        </a>
+
+        <a href="propsure-privacy.html" class="legal-card">
+            <div class="lc-title">Propsure</div>
+            Privacy Policy
+        </a>
+
+        <a href="propsure-terms.html" class="legal-card">
+            <div class="lc-title">Propsure</div>
+            Terms of Use
+        </a>
+
+        <a href="propsure-account-deletion.html" class="legal-card">
+            <div class="lc-title">Propsure</div>
+            Account Deletion
+        </a>
+
+        <a href="contact.html" class="legal-card">
+            <div class="lc-title">Support</div>
+            Contact Us
+        </a>
+
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Prince Dev Labs Limited. All rights reserved. Abuja, FCT, Nigeria.</p>
+
+    <p style="margin-top:10px;">
+        <a href="carplaza-privacy.html">CarPlaza Privacy</a>
+        <a href="carplaza-terms.html">CarPlaza Terms</a>
+        <a href="propsure-privacy.html">Propsure Privacy</a>
+        <a href="propsure-account-deletion.html">Delete Propsure Account</a>
+        <a href="contact.html">Contact</a>
+    </p>
+
+    <p style="margin-top:10px;">support@princedevlabs.com</p>
+    <p class="rc">RC: Prince Dev Labs Limited — Registered in Nigeria</p>
+</footer>
 
 </body>
 </html>
