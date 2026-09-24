@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VeriThesis — Privacy Policy</title>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,sans-serif;
+    max-width:720px;margin:0 auto;padding:32px 20px 80px;color:#0B1B33;line-height:1.6;}
+  h1{font-size:26px;margin-bottom:4px;}
+  .updated{color:#52607A;font-size:13px;margin-bottom:32px;}
+  h2{font-size:17px;color:#0F766E;margin-top:32px;}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13.5px;}
+  th,td{border:1px solid #CBD5E1;padding:8px 10px;text-align:left;}
+  th{background:#0B1B33;color:#fff;}
+  tr:nth-child(even){background:#F1F5F9;}
+  .note{background:#F1F5F9;border-radius:10px;padding:14px 16px;font-size:13.5px;color:#334155;}
+  code{background:#F1F5F9;padding:2px 6px;border-radius:4px;font-size:13px;}
+</style>
+</head>
+<body>
+<h1>VeriThesis — Privacy Policy</h1>
+<p class="updated">Last updated: this describes current app behavior as built.</p>
+
+<p>VeriThesis is a source-grounded academic project copilot. This page explains
+what data the app collects, how it's used, and how to control or delete it.</p>
+
+<h2>What's stored, and where</h2>
+<table>
+<tr><th>Data</th><th>Purpose</th></tr>
+<tr><td>Account identifier (anonymous by default, or an email if you create one)</td><td>Identifying your account and its credit balance</td></tr>
+<tr><td>Research topic, plan, sources, evidence, drafted chapters</td><td>The core service — building your project</td></tr>
+<tr><td>Uploaded CSVs or scanned documents</td><td>Computing statistics or extracting text you requested</td></tr>
+<tr><td>Purchase and credit history</td><td>Billing accuracy and support</td></tr>
+</table>
+
+<h2>Who can see your work</h2>
+<p>Only you, by default. If you invite a supervisor by email, they can view your
+plan, integrity scorecard, and flagged claims, and leave comments — nothing else.
+Nobody else at VeriThesis reads project content as a matter of course.</p>
+
+<h2>AI processing</h2>
+<p>Drafting, verification, and evidence extraction send the relevant text (a topic,
+a claim, an approved source's abstract) to the AI provider handling that step
+(Anthropic, OpenAI, or DeepSeek). <strong>Uploaded datasets and scanned documents
+are never sent to an AI model</strong> — CSV analysis is plain arithmetic, and
+scanned-document text extraction uses Google Cloud Vision for OCR only.</p>
+
+<h2>Deleting your data</h2>
+<p>Deleting a project in-app is permanent and complete — it removes the project,
+every source, evidence item, chapter, comment, and uploaded file for it. There is
+no undo. To delete your entire account, contact support at the email below.</p>
+
+<h2>Third-party services used</h2>
+<table>
+<tr><th>Service</th><th>What it's used for</th></tr>
+<tr><td>Firebase (Google)</td><td>Authentication, database, storage, hosting, crash reporting, analytics</td></tr>
+<tr><td>Anthropic, OpenAI, DeepSeek</td><td>AI processing for planning, drafting, and verification</td></tr>
+<tr><td>Crossref, OpenAlex, Semantic Scholar</td><td>Academic source discovery (public metadata APIs)</td></tr>
+<tr><td>Google Cloud Vision</td><td>Text extraction from scanned documents you upload</td></tr>
+<tr><td>Google Play Billing / Apple StoreKit</td><td>Processing purchases</td></tr>
+<tr><td>Copyleaks (optional add-on)</td><td>Similarity checking, only if you explicitly request it</td></tr>
+</table>
+
+<div class="note">
+This document describes actual current behavior. It has not been reviewed by
+a lawyer and is not a substitute for formal legal advice on data protection
+compliance (including Nigeria's NDPR) — it is provided as an honest, accurate
+account of what the app does.
+</div>
+
+<h2>Contact</h2>
+<p>Questions about this policy or your data: <a href="mailto:support@princedevlabs.com">support@princedevlabs.com</a></p>
+</body>
+</html>
